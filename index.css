@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, p {
+  color: #999;
+}
+
+span {
+  margin-left: 90px;
+}
+
+h5 {
+  margin-bottom: auto;
+}
+
+button {
+  display: contents;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.child {
+  box-shadow: 0px 1px 1px #393939;
+  border-radius: 10px;
+  padding: 10px;
+  height: 140px;
+  width: 220px;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-rows: minmax(1px, auto);
+  grid-template-areas:
+  " a b b "
+  " a b b "
+  " . b b "
+  " c c c ";
+}
+
+.child:hover {
+  box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #e7e7e7;
+}
+
+.imagery {
+  display: flex;
+  width: 50px;
+  align-self: center;
+  grid-area: a;
+}
+
+.text {
+  grid-area: b;
+}
+
+.link {
+  grid-area: c;
+  align-self: center;
+}
